@@ -1,0 +1,111 @@
+2025-11-03 15:45:53,291 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.access: Configured uvicorn.access logger
+2025-11-03 15:45:53,296 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: API is starting up
+2025-11-03 15:45:53,302 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Started server process [52697]
+2025-11-03 15:45:53,303 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Waiting for application startup.
+2025-11-03 15:45:53,303 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Application startup complete.
+2025-11-03 15:45:53,306 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-11-03 15:48:44,496 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Shutting down
+2025-11-03 15:48:44,596 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Waiting for application shutdown.
+2025-11-03 15:48:44,597 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Application shutdown complete.
+2025-11-03 15:48:44,597 [MainProcess: 52697] [MainThread: 137599653679232] [INFO] uvicorn.error: Finished server process [52697]
+2025-11-03 15:49:10,234 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: Configured uvicorn.access logger
+2025-11-03 15:49:10,245 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: API is starting up
+2025-11-03 15:49:10,250 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Started server process [857]
+2025-11-03 15:49:10,250 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Waiting for application startup.
+2025-11-03 15:49:10,250 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Application startup complete.
+2025-11-03 15:49:10,252 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     83.254.3.166:54232 - "GET /docs HTTP/1.1" 200 OK
+2025-11-03 15:53:25,047 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 83.254.3.166:54232 - "GET /docs HTTP/1.1" 200
+INFO:     83.254.3.166:54232 - "GET /openapi.json HTTP/1.1" 200 OK
+2025-11-03 15:53:25,418 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 83.254.3.166:54232 - "GET /openapi.json HTTP/1.1" 200
+INFO:     135.119.16.170:35556 - "GET / HTTP/1.1" 404 Not Found
+2025-11-03 16:53:02,492 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 135.119.16.170:35556 - "GET / HTTP/1.1" 404
+2025-11-03 16:53:07,751 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-03 18:39:11,503 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-03 18:39:11,763 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-03 22:42:34,871 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+INFO:     81.19.2.58:40059 - "GET / HTTP/1.0" 404 Not Found
+2025-11-03 23:54:42,971 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 81.19.2.58:40059 - "GET / HTTP/1.0" 404
+2025-11-03 23:58:33,630 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-03 23:58:33,682 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+INFO:     164.92.140.240:36948 - "GET / HTTP/1.1" 404 Not Found
+2025-11-03 23:58:33,728 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 164.92.140.240:36948 - "GET / HTTP/1.1" 404
+INFO:     164.92.140.240:36952 - "GET /login HTTP/1.1" 404 Not Found
+2025-11-03 23:58:33,777 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 164.92.140.240:36952 - "GET /login HTTP/1.1" 404
+INFO:     64.62.156.10:2954 - "GET / HTTP/1.1" 404 Not Found
+2025-11-04 00:36:48,841 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 64.62.156.10:2954 - "GET / HTTP/1.1" 404
+INFO:     64.62.156.13:37663 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2025-11-04 00:37:12,683 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 64.62.156.13:37663 - "GET /favicon.ico HTTP/1.1" 404
+INFO:     64.62.156.21:48315 - "GET /?format=json HTTP/1.1" 404 Not Found
+2025-11-04 00:37:15,910 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 64.62.156.21:48315 - "GET /?format=json HTTP/1.1" 404
+2025-11-04 00:37:22,008 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-04 07:04:18,892 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+INFO:     3.132.23.201:49536 - "GET / HTTP/1.1" 404 Not Found
+2025-11-04 07:40:20,230 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 3.132.23.201:49536 - "GET / HTTP/1.1" 404
+INFO:     3.132.23.201:60480 - "GET / HTTP/1.1" 404 Not Found
+2025-11-04 07:40:53,739 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 3.132.23.201:60480 - "GET / HTTP/1.1" 404
+2025-11-04 07:43:38,041 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-04 07:45:23,005 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-04 07:47:01,050 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+INFO:     103.203.57.20:60616 - "GET / HTTP/1.1" 404 Not Found
+2025-11-04 08:47:21,724 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 103.203.57.20:60616 - "GET / HTTP/1.1" 404
+INFO:     60.191.125.35:51056 - "HEAD / HTTP/1.1" 404 Not Found
+2025-11-04 09:37:42,426 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 60.191.125.35:51056 - "HEAD / HTTP/1.1" 404
+INFO:     83.254.3.166:64239 - "GET /docs HTTP/1.1" 200 OK
+2025-11-04 13:03:59,573 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 83.254.3.166:64239 - "GET /docs HTTP/1.1" 200
+INFO:     83.254.3.166:64239 - "GET /openapi.json HTTP/1.1" 200 OK
+2025-11-04 13:03:59,947 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 83.254.3.166:64239 - "GET /openapi.json HTTP/1.1" 200
+INFO:     35.237.4.214:37180 - "GET /docs HTTP/1.1" 200 OK
+2025-11-04 13:04:11,760 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 35.237.4.214:37180 - "GET /docs HTTP/1.1" 200
+INFO:     155.4.221.222:14768 - "GET /docs HTTP/1.1" 200 OK
+2025-11-04 13:07:10,631 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 155.4.221.222:14768 - "GET /docs HTTP/1.1" 200
+INFO:     155.4.221.222:14768 - "GET /openapi.json HTTP/1.1" 200 OK
+2025-11-04 13:07:11,773 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 155.4.221.222:14768 - "GET /openapi.json HTTP/1.1" 200
+INFO:     155.4.221.222:15104 - "GET /docs HTTP/1.1" 200 OK
+2025-11-04 13:30:40,686 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 155.4.221.222:15104 - "GET /docs HTTP/1.1" 200
+INFO:     155.4.221.222:15104 - "GET /openapi.json HTTP/1.1" 200 OK
+2025-11-04 13:30:41,331 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 155.4.221.222:15104 - "GET /openapi.json HTTP/1.1" 200
+INFO:     137.184.104.187:47280 - "GET / HTTP/1.1" 404 Not Found
+2025-11-04 14:42:14,314 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 137.184.104.187:47280 - "GET / HTTP/1.1" 404
+INFO:     137.184.104.187:47284 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2025-11-04 14:42:14,523 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 137.184.104.187:47284 - "GET /favicon.ico HTTP/1.1" 404
+INFO:     83.254.3.166:51232 - "GET /docs HTTP/1.1" 200 OK
+2025-11-04 14:57:59,608 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 83.254.3.166:51232 - "GET /docs HTTP/1.1" 200
+INFO:     83.254.3.166:51232 - "GET /openapi.json HTTP/1.1" 200 OK
+2025-11-04 14:57:59,918 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 83.254.3.166:51232 - "GET /openapi.json HTTP/1.1" 200
+INFO:     89.248.168.227:59158 - "GET /https%3A//www.rhoener-botschaft.de/events/sternenparkf%C3%BChrung-mit-dani-michelle/%27%3B%22%20class%3D%22%20w-full%20teaser-wrapper%20teaser-50%20mb-5%20relative HTTP/1.1" 404 Not Found
+2025-11-04 15:25:36,072 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 89.248.168.227:59158 - "GET /https%3A//www.rhoener-botschaft.de/events/sternenparkf%C3%BChrung-mit-dani-michelle/%27%3B%22%20class%3D%22%20w-full%20teaser-wrapper%20teaser-50%20mb-5%20relative HTTP/1.1" 404
+2025-11-04 18:27:55,790 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+INFO:     204.76.203.18:53788 - "GET / HTTP/1.1" 404 Not Found
+2025-11-04 19:15:05,929 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 204.76.203.18:53788 - "GET / HTTP/1.1" 404
+INFO:     204.76.203.18:45650 - "GET /bins/ HTTP/1.1" 404 Not Found
+2025-11-04 19:26:25,718 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 204.76.203.18:45650 - "GET /bins/ HTTP/1.1" 404
+INFO:     204.76.203.18:51344 - "GET /bin/ HTTP/1.1" 404 Not Found
+2025-11-04 19:47:34,175 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 204.76.203.18:51344 - "GET /bin/ HTTP/1.1" 404
+INFO:     204.76.203.18:48862 - "GET /backup/ HTTP/1.1" 404 Not Found
+2025-11-04 20:02:49,909 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.access: 204.76.203.18:48862 - "GET /backup/ HTTP/1.1" 404
+2025-11-04 21:04:11,583 [MainProcess: 857] [MainThread: 134580524101760] [WARNING] uvicorn.error: Invalid HTTP request received.
+2025-11-04 21:32:25,196 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Shutting down
+2025-11-04 21:32:25,301 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Waiting for application shutdown.
+2025-11-04 21:32:25,301 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Application shutdown complete.
+2025-11-04 21:32:25,301 [MainProcess: 857] [MainThread: 134580524101760] [INFO] uvicorn.error: Finished server process [857]
+2025-11-04 21:32:45,322 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: Configured uvicorn.access logger
+2025-11-04 21:32:45,339 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.error: API is starting up
+2025-11-04 21:32:45,347 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.error: Started server process [951]
+2025-11-04 21:32:45,347 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.error: Waiting for application startup.
+2025-11-04 21:32:45,348 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.error: Application startup complete.
+2025-11-04 21:32:45,349 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.error: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     83.254.3.166:57860 - "GET /docs HTTP/1.1" 200 OK
+2025-11-04 21:40:27,806 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: 83.254.3.166:57860 - "GET /docs HTTP/1.1" 200
+INFO:     83.254.3.166:57860 - "GET /openapi.json HTTP/1.1" 200 OK
+2025-11-04 21:40:28,137 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: 83.254.3.166:57860 - "GET /openapi.json HTTP/1.1" 200
+INFO:     83.254.3.166:0 - "GET /docs HTTP/1.0" 200 OK
+2025-11-04 21:42:26,971 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: 83.254.3.166:0 - "GET /docs HTTP/1.0" 200
+INFO:     83.254.3.166:0 - "GET /openapi.json HTTP/1.0" 200 OK
+2025-11-04 21:42:27,547 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: 83.254.3.166:0 - "GET /openapi.json HTTP/1.0" 200
+INFO:     83.254.3.166:0 - "GET /docs HTTP/1.0" 200 OK
+2025-11-04 21:44:24,075 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: 83.254.3.166:0 - "GET /docs HTTP/1.0" 200
+INFO:     83.254.3.166:0 - "GET /openapi.json HTTP/1.0" 200 OK
+2025-11-04 21:44:24,369 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: 83.254.3.166:0 - "GET /openapi.json HTTP/1.0" 200
+INFO:     20.65.193.127:0 - "GET / HTTP/1.0" 404 Not Found
+2025-11-04 22:16:00,008 [MainProcess: 951] [MainThread: 133985805316224] [INFO] uvicorn.access: 20.65.193.127:0 - "GET / HTTP/1.0" 404

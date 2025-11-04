@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 pg_data/
 .env
+.venv

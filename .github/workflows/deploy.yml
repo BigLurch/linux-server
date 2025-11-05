@@ -19,12 +19,12 @@ jobs:
 
       - name: Copy files to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} 'mkdir -p /srv/apps/fastapi_app'
-          scp -r -o StrictHostKeyChecking=no * ubuntu@${{ secrets.EC2_HOST }}:/srv/apps/fastapi_app/
+          ssh -o StrictHostKeyChecking=no jonas@${{ secrets.EC2_HOST }} 'mkdir -p /srv/apps/fastapi_app'
+          scp -r -o StrictHostKeyChecking=no * jonas@${{ secrets.EC2_HOST }}:/srv/apps/fastapi_app/
 
       - name: Rebuild and restart Docker on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} '
+          ssh -o StrictHostKeyChecking=no jonas@${{ secrets.EC2_HOST }} '
             cd /srv/apps/fastapi_app &&
             docker compose down &&
             docker compose up -d --build

@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     name: Deploy to EC2 Server
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: 🧾 Checkout code

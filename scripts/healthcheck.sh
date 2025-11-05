@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+
+LOCKFILE="/tmp/healthcheck.lock"
+
+if [ -f "$LOCKFILE" ]; then
+  echo "Healthcheck already running, exiting." >> /srv/apps/fastapi_app/logs/healthcheck.log
+  exit 0
+fi
+
+trap "rm -f $LOCKFILE" EXIT
+touch "$LOCKFILE"#!/usr/bin/env bash
+
 set -euo pipefail
 
 # --- Environment and paths ---

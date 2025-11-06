@@ -9,23 +9,23 @@ jobs:
         runs-on: self-hosted
 
         steps:
-            - name: Checkout code
+          - name: Checkout code
             uses: actions/checkout@v3
 
-            - name: Stop old containers
+          - name: Stop old containers
             run: |
-            cd /srv/apps/fastapi_app || exit 1
-            docker compose down || true
+                cd /srv/apps/fastapi_app || exit 1
+                docker compose down || true
 
-            - name: Copy new code
+          - name: Copy new code
             run: |
-            rsync -av --delete ./ /srv/apps/fastapi_app/
+                rsync -av --delete ./ /srv/apps/fastapi_app/
 
-            - name: Rebuild and restart app
+          - name: Rebuild and restart app
             run: |
-            cd /srv/apps/fastapi_app
-            docker compose up -d --build
+                cd /srv/apps/fastapi_app
+                docker compose up -d --build
 
-            - name: ✅ Confirm deployment
+          - name: ✅ Confirm deployment
             run: docker ps
                                                                                                                         

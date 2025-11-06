@@ -1,41 +1,31 @@
-name: Deploy FastAPI to EC2
+name: 🚀 Deploy FastAPI on EC2 (self-hosted)
 
 on:
-  push:
-    branches: [ "main" ]
+    push:
+        branches: [ "main" ]
 
 jobs:
-  deploy:
-    name: Deploy to EC2 Server
-    runs-on: self-hosted
+    deploy:
+        runs-on: self-hosted
 
-    steps:
-      - name: 🧾 Checkout code
-        uses: actions/checkout@v3
+        steps:
+            - name: Checkout code
+            uses: actions/checkout@v3
 
-      - name: 🔐 Set up SSH
-        uses: webfactory/ssh-agent@v0.8.0
-        with:
-          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+            - name: Stop old containers
+            run: |
+            cd /srv/apps/fastapi_app || exit 1
+            docker compose down || true
 
-      - name: 🧠 Verify SSH connection
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "echo '✅ Connected to EC2 successfully'"
+            - name: Copy new code
+            run: |
+            rsync -av --delete ./ /srv/apps/fastapi_app/
 
-      - name: 📦 Upload project files
-        run: |
-          rsync -avz --exclude '.git' --exclude '__pycache__' --exclude '.venv' \
-            -e "ssh -o StrictHostKeyChecking=no" \
-            ./ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/srv/apps/fastapi_app/
+            - name: Rebuild and restart app
+            run: |
+            cd /srv/apps/fastapi_app
+            docker compose up -d --build
 
-      - name: 🐳 Restart Docker Compose
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-          cd /srv/apps/fastapi_app
-          echo "🔁 Pulling latest images..."
-          docker compose pull || true
-          echo "🧱 Rebuilding containers..."
-          docker compose down
-          docker compose up -d --build
-          echo "✅ Deployment finished!"
-          EOF
+            - name: ✅ Confirm deployment
+            run: docker ps
+                                                                                                                        
